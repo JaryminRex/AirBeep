@@ -25,7 +25,9 @@ The replacement files are based on the silent assets from AirliftSilence and kee
 ## Requirements
 
 - A physical iPhone or iPad running one of the supported iOS/iPadOS releases:
-  - **iOS/iPadOS 27.0 – 27.2 B2**
+  - **iOS/iPadOS 27.0 – 27.2 B2** — on-device pairing (Settings › Privacy & Security › Developer Mode) or an imported pairing file.
+  - **iOS/iPadOS 18.0 – 26.x** — imported **Remote Pairing** file only (SideStore / LiveContainer / AltStore / jitterbugpair, or idevice_pair with the "Remote pairing" type). iTunes-style Lockdown records are not sufficient for the file operations on these versions.
+- A loopback VPN (e.g. LocalDevVPN) active while operating.
 - Xcode 27 or newer for local builds.
 - The provided GitHub Actions workflow builds an unsigned IPA in the cloud.
 
