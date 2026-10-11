@@ -25,7 +25,9 @@ AirBeep 会请求以下系统文件的容器级访问权限：
 ## 系统要求
 
 - 一台受支持的 iOS/iPadOS 系统的实体 iPhone 或 iPad：
-  - **iOS/iPadOS 27.0 – 27.2 B2**
+  - **iOS/iPadOS 27.0 – 27.2 B2** —— 可在设备上直接配对（设置 › 隐私与安全性 › 开发者模式），或导入配对文件。
+  - **iOS/iPadOS 18.0 – 26.x** —— 仅支持导入 **Remote Pairing（远程配对）** 类型文件（SideStore / LiveContainer / AltStore / jitterbugpair 生成，或 idevice_pair 选择 "Remote pairing" 类型）。iTunes 式 Lockdown 记录在这些版本上无法完成文件操作。
+- 操作期间需保持回环 VPN（如 LocalDevVPN）已连接。
 - 本地构建需 Xcode 27 或更高版本。
 - 仓库提供的 GitHub Actions 工作流可在云端构建 unsigned IPA。
 
